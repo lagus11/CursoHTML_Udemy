@@ -1,0 +1,22 @@
+
+.general {
+    display: flex;
+    flex-direction: row;
+}
+
+#columna{
+    padding: 10px;
+    width: 33%;
+    justify-content: space-evenly;
+}
+
+#columna img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#columna img:hover{
+    background-color: lightgray;
+}
+

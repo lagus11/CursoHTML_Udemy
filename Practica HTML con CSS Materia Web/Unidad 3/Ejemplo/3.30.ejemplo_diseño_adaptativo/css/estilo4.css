@@ -1,0 +1,20 @@
+
+
+.contenedor {
+    height: 97vh;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: lightblue;
+}
+
+main {
+    background-color: pink;
+}
+
+footer {
+    background-color: lightgreen;
+}

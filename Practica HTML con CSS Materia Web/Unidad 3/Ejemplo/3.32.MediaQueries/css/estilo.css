@@ -1,0 +1,12 @@
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+    h1 {
+        color: red;
+    }
+}
+

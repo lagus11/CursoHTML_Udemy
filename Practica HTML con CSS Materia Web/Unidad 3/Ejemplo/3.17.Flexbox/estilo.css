@@ -1,0 +1,28 @@
+
+.contenedor {
+    background-color: lightblue;
+    height: 700px;
+    display: flex;
+}
+
+#elemento1 {
+    flex-basis: 10%;
+}
+
+#elemento2 {
+    flex-basis: 30%;
+}
+
+#elemento3 {
+    flex-basis: 60%;
+}
+
+
+.elemento {
+    background-color: pink;
+    width: 120px;
+    height: 120px;
+    font-size: 4rem;
+    text-align: center;
+    border: 2px solid black;
+}

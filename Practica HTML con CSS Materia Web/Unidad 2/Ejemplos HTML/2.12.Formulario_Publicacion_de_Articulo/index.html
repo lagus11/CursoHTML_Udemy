@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicación de Artículo</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Artículo</legend>
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            <br>
+            <br>
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" step="0.01" required>
+            <br>
+            <br>
+            <label for="imagen">Imagen</label>
+            <input type="file" accept="image/*" id="imagen" required>
+            <br>
+            <br>
+            <label for="color">Color</label>
+            <input type="color" id="color" required>
+            <br>
+            <br>
+            <label for="descripcion">Descripción</label>
+            <br>
+            <textarea placeholder="Escribe una descripción" cols="30" rows="10" id="descripcion" required ></textarea>
+            <br>
+            <br>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" min="1" max="100" id="cantidad" value="1" required>
+            <br>
+            <br>
+            <label for="nuevo">Nuevo</label>
+            <input type="radio" id="nuevo" name="estado" checked required>
+            <br>
+            <label for="usado">Usado</label>
+            <input type="radio" id="usado" name="estado" required>
+            <br>
+            <br>
+            <input type="submit" value="Publicar">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+</html>

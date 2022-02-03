@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 10px solid black;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.caja-azul {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+
+/* static, relative, absolute, fixed, sticky */
+/* top, left, bottom, right; z-index*/

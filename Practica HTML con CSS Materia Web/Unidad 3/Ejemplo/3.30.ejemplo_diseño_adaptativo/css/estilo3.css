@@ -1,0 +1,19 @@
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(200px, 20%) 1fr;
+}
+
+aside {
+    background-color: lightblue;
+}
+
+main {
+    background-color: pink;
+}
+
+main, aside {
+    font-size: 5rem;
+    height: 100vh;
+}

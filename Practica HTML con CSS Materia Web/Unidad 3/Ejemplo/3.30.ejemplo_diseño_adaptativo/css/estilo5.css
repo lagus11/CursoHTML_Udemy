@@ -1,0 +1,36 @@
+
+
+.contenedor {
+    height: 97vh;
+    display: grid;
+    gap: 10px;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: lightblue;
+}
+
+nav {
+    grid-column: 1 / 2;
+    background-color: lightsalmon;
+}
+
+main {
+    grid-column: 2 / 3;
+    background-color: pink;
+}
+
+aside {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: lightsalmon;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: lightgreen;
+}

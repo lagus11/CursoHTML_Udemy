@@ -1,0 +1,21 @@
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0%;
+    margin-bottom: 30px;
+    
+}
+
+.contenedor{
+    width: clamp(50ch, 50%, 60ch);
+    height: 400px;
+    background:lightgreen;
+    border:3px solid gray;
+}
+
+.contenido{
+    height: 130px;
+    background:lightyellow;
+    margin:0 5% 0 5% ;
+    padding-bottom:200px;
+}

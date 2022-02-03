@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+#titulo {
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.tema {
+    color:orange;
+    font-size: 1.2rem;
+}
+
+.texto {
+    color: gray;
+    font-style: italic;
+}
+
+.borde {
+    border-bottom: 2px solid gray;
+}
+
+#titulo, .texto {
+    margin-bottom: 30px;
+}

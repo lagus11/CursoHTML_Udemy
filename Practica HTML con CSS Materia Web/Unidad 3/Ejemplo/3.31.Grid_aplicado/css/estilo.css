@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    gap: 2px;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+/* --- HEADER --- */
+header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: gray;
+    color: white;
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+header p {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+/* --- NAV --- */
+nav {
+    grid-column: 1 / 2;
+    background-color: lightgray;
+    color: black;
+    padding: 15px 10px;
+}
+
+nav h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+    
+}
+
+nav a:hover {
+    color: red;
+}
+/* --- MAIN --- */
+main {
+    grid-column: 2 / 3;
+    background-color: lightgray;
+    padding: 0 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+} 
+section h2 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+section hr {
+    background-color: black;
+    height: 3px;
+}
+
+article h3 {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+article a {
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+article a:hover {
+    color: red;
+}
+/* --- ASIDE --- */
+aside {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: lightgray;
+    color: black;
+    padding: 15px 10px;
+}
+
+
+aside h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+    
+}
+
+aside a:hover {
+    color: red;
+}
+
+/* --- FOOTER --- */
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: gray;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+footer p {
+    color: white;
+    font-size: 0.8rem;
+}

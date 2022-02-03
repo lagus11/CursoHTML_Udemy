@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster+Two&family=Patrick+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Patrick Hand", sans-serif;
+    color: white
+ }
+
+body {
+    background: pink;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    gap: 3px; 
+    border: 3px solid white;
+    background: white; 
+}
+
+header {
+    padding: 1.5rem 0 1.5rem 0;
+    background: lightsalmon;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: "Lobster Two", sans-serif;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.imagen-div {
+    display: grid;
+    place-items: center;
+}
+
+.imagen-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ingredientes {
+    padding: 2rem;
+    background: palevioletred;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.pasos {
+    padding: 2rem;
+    background: royalblue;
+    font-size: 1.2rem;
+}
+
+
+.contenedor {
+    grid-template-rows: auto 1fr 1fr 1fr;
+}
+
+@media (min-width: 650px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: "encabezado encabezado"
+                             "imagen imagen"
+                             "ingredientes pasos";
+    }
+
+    header {
+        grid-area: encabezado;
+    }
+
+    .imagen-div {
+        grid-area: imagen;
+    }
+
+    .ingredientes {
+        grid-area: ingredientes;
+    }
+
+    .pasos {
+        grid-area: pasos;
+    }
+}
+
+/* ---  Mayor a 800px --- */
+@media (min-width: 800px) {
+    .contenedor {
+        grid-template-columns: 4fr 3fr;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: "encabezado encabezado"
+                             "imagen ingredientes"
+                             "imagen pasos";
+    }
+
+    header {
+        grid-area: encabezado;
+    }
+
+    .imagen-div {
+        grid-area: imagen;
+    }
+
+    .ingredientes {
+        grid-area: ingredientes;
+    }
+
+    .pasos {
+        grid-area: pasos;
+    }
+}

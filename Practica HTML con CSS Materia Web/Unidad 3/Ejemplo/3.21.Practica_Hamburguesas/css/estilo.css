@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- ENCABEZADO --- */
+header {
+    background-color: #512e04;
+    flex-basis: 12vh;
+    display: flex;
+}
+
+.titulo {
+    text-transform: uppercase;
+    color: #ffb400;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    list-style: none;
+    
+}
+
+.menu li {
+    padding-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: #ffb400; 
+}
+
+/* --- MAIN --- */
+main {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+}
+
+.encabezado #descripcion {
+    color: #512e04;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.encabezado #hamburguesa {
+    color: #ffb400;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.descripcion p {
+    color: #512e04;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.descripcion p{
+    margin-bottom: 10px;
+}
+
+.descripcion #reservar {
+    color: white;
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #8f602c;
+    border-radius: 20px;
+    width: 90px;
+    height: 25px;
+    border: 2px solid #8f602c;
+}
+
+.descripcion #llevar {
+    color: #8f602c;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 20px;
+    width: 90px;
+    height: 25px;
+    border: 2px solid #8f602c;
+}
+
+.descripcion #reservar:hover, .descripcion #llevar:hover {
+    background-color: #ffb400;
+}
+
+/* --- PIE DE PAGINA --- */
+footer {
+    flex-basis: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer p{
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+/* --- IMG --- */
+#imagen {
+    height: 100vh;
+    width: 60vh;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}

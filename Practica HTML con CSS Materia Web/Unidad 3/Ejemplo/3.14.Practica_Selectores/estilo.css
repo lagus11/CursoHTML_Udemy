@@ -1,0 +1,121 @@
+body {
+    width: 1024px;
+    margin: auto;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#titulo {
+    font-size: 5rem;
+    background-color: #8b321b;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 + p, nav h2, nav li {
+    color: gray;
+}
+nav h2{
+    margin-top: 30px;
+}
+nav h2, nav ol {
+    margin-bottom: 0;
+}
+nav li {
+    margin-top: 10px;
+}
+nav  a {
+    color: #5394aa; 
+    text-decoration: none;
+}
+
+nav  a:hover {
+    color: lightgray;
+}
+
+nav a:active {
+    color: red;
+}
+
+/* CENTRAR LOS TITULOS */
+#titulo, #fotografia, #integrantes, #enlaces, #discografia {
+    text-align: center;
+}
+
+#fotografia, #integrantes, #enlaces, #discografia  {
+    background-color: #5394aa;
+    padding: 15px;
+}
+
+.margen img{
+    display: block;
+    margin: 50px auto;
+    border: 3px solid gray;
+}
+
+.margen img:hover {
+    border: 3px solid #5394aa; ;
+}
+
+#integrantes {
+    margin-top: 0;
+}
+
+.margen {
+    padding: 10px;
+    
+}
+
+.margen table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 5px solid gray;
+    color: gray;
+}
+
+
+.margen td {
+    padding: 5px;
+}
+
+.margen tr:hover {
+    color:  lightgray;
+    background-color: #5394aa;
+}
+
+.margen tr:first-child {
+    background-color: gray;
+    color: black;
+ }
+
+.seccion a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.seccion li {
+    text-align: center;
+    margin: 15px;
+}
+
+.seccion a:hover {
+    background-color: lightgray;
+    padding: 10px;
+    color: black;
+}
+
+.margen tr:first-child{
+    color:black;
+    background:gray;
+}
+.seccion a:active {
+    background-color: red;
+   
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 2px;
+    color: lightgray;
+}
