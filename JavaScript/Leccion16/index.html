@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+    <link href="/estilos.css" rel = "stylesheet"/>
+</head>
+<body onload="entrar()">
+    <h1 id="titulo">
+        Manejo DOM con JavaScript
+    </h1>
+    <!--<button onclick="mostrar()">Mostrar</button>-->
+    <br/>
+    <div id="mostrar"></div>
+    <!--<img id='imagen' src="/javascript.png" >-->
+    <script>
+        let bandera = true;
+        function mostrar(){
+            /*if(bandera){
+                bandera = false;
+                document.getElementById('titulo').style.color = 'blue';
+            }else{
+                bandera = true;
+                document.getElementById('titulo').style.color = 'black';
+            }*/
+            //document.getElementById('imagen').src = "/html5.png";
+        }
+        /*function cambiarTexto(titulo){
+            console.log(titulo);
+            console.log(titulo.innerHTML);
+            titulo.innerHTML = " Cambiamos el título ";
+            console.log(titulo.innerHTML);
+        }//cambiarTexto*/
+
+       /* document.getElementById('titulo').onclick = cambiarTexto;
+        
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo Contenido';
+        }*/
+        function entrar(){
+            alert('Entrando a la pagina web');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = 'Cookies están habilitadas';
+            }//if
+            else{
+                texto = 'Cookies están inhabilitadas';
+            }//else
+            document.getElementById('mostrar').innerHTML = texto;
+        }//entrar
+    </script>
+
+
+
+
+    <!--<h1 class="azul">Ejemplo DOM con JavaScript</h1>
+    <p class="azul">Saludos</p>
+    <p class="azul">otro parrafo</p>-->
+        <!--//parte 3
+    <form id="formulario">
+        <label>Nombre: </label> 
+        <input type="text" name="nombre" value="Juan"/>
+        <br/>
+        <label>Apellido</label>
+        <input type="text" name="apellido" value="Perez"/>
+        <br/>
+    </form>
+
+    <button onclick='mostrarValores()'>Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores(){
+            let formulario = document.forms['formulario'];
+            let texto = '';
+            let nombre = formulario['nombre'];
+            console.log(nombre);
+            let apellido = formulario['apellido'];
+            texto = nombre.value + '<br/>' + apellido.value;
+            document.getElementById('valores').innerHTML = texto;
+        }//mostrarValores
+    </script>
+    -->
+    <script>
+    
+        /*
+        //parte 2
+        //let elementos = document.getElementsByTagName('p');
+        let elementos = document.querySelectorAll('p.azul');
+        console.log(`No. elementos: ${elementos.length}`);
+        /*for(let i = 0; i < elementos.length; i++){
+            console.log(`${i} - ${elementos[i].innerHTML}`);
+        }//for
+        for(let elemento of elementos){
+            console.log(`${elemento.innerHTML}`);
+        }//for
+            */
+        /*Parte 1
+        let cabecero = document.getElementById('cabecero');
+        console.log(`valor cabecero: ${cabecero.innerHTML}`);
+        let parrafo = document.getElementById('parrafo'); 
+        console.log(`valor parrafo: parrafo ${parrafo.innerHTML}`);
+        console.log('Saludos desde JavaScript');
+        parrafo.innerHTML = 'Nuevo valor del párrafo';
+        cabecero.innerHTML = 'Nuevo valor de cabecero';*/
+
+    </script>
+</body>
+</html>

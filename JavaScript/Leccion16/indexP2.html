@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+    <link href="/estilos.css" rel = "stylesheet"/>
+</head>
+<body>
+    <!--<h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">Manejo DOM con JavaScript</h1>-->
+    <!--<h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Manejo DOM con JavaScript</h1>-->
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <!--<label>Nombre: </label>
+    <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+    <br/><br/>
+    <label>Apellido: </label>
+    <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">-->
+    <br/>
+    <form id="forma">
+        <label>Nombre: </label>
+        <input type="text" id="nombre">
+        <br/><br/>
+        <label>Apellido: </label>
+        <input type="text" id="apellido">
+    </form>
+    <!--<label for="">Nombre: </label>
+    <input type="text" onchange="convertir(this)"/>-->
+    <script>
+        /*
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }//convertir*/
+
+        /*function rojo(titulo){
+            console.log('onmousedown cambio a rojo');
+            titulo.style.color = 'red';
+        }//rojo
+
+        function azul(titulo){
+            console.log('onmouseup cambio a azul');
+            titulo.style.color = 'blue';
+        }
+
+        function verde(titulo){
+            console.log('click cambio a verde');
+            titulo.style.color = 'green';
+        }*/
+        /*
+        function cambiar(elementoInput){
+            elementoInput.style.background = 'yellow';
+        }//cambiar
+
+        function regresar(elementoInput){
+            elementoInput.style.background = 'white';
+        }//regresar*/
+        
+        /*document.getElementById('nombre').addEventListener('focus', (evento) => {
+            evento.target.style.background = 'pink';
+        });
+        document.getElementById('nombre').addEventListener('blur', (evento) => {
+            evento.target.style.background = 'white';
+        });
+
+        document.getElementById('apellido').addEventListener('focus', cambiar);
+        document.getElementById('apellido').addEventListener('blur', regresar);
+
+        function cambiar(evento){
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }//cambiar
+
+        function regresar(evento){
+            evento.target.style.background = 'white';
+        }//regresar
+        */
+
+        const forma = document.getElementById('forma');
+        forma.addEventListener('focus', (evento) => {
+            evento.target.style.background = 'pink';
+        }, true);
+        forma.addEventListener('blur', (evento) => {
+            evento.target.style.background = 'white';
+        }, true);
+
+
+    </script>
+</body>
+</html>
