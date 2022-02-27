@@ -1,0 +1,1 @@
+https://wiki.pragma.com.co/ejercicio-practico-front-end-pokedex
